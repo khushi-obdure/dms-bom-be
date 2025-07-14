@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f9f9f9;
+        padding: 20px;
+      }
+      .container {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        max-width: 600px;
+        margin: auto;
+      }
+      h2 {
+        color: #333333;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      li {
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Hello <%= userName %>,</h2>
+      <p>We are pleased to inform you that your account has been created successfully. Below are your login details:</p>
+
+      <p><strong>Credentials:</strong></p>
+      <ul>
+        <li><strong>Email:</strong> <%= userEmail %></li>
+        <li><strong>Password:</strong> <%= userPassword %></li>
+      </ul>
+
+      <p>Please keep this information secure. You can log in using the following link:</p>
+      <p>
+        <a href="https://dms.lumaxmail.com/" target="_blank">"https://dms.lumaxmail.com/"</a>
+      </p>
+
+      <p>If you have any issues or questions, feel free to reach out to our support team.</p>
+
+      <p>Best regards,<br>Lumax Team</p>
+    </div>
+  </body>
+</html>

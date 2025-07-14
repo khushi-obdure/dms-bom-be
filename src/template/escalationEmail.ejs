@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Escalation Email</title>
+</head>
+<body>
+  <p>Dear <%= approverName %> and <%= adminName %>,</p>
+
+  <p>I am writing to bring to your attention that the approval for <strong><%= documentName %> (ID: <%= documentId %>)</strong> submitted on <strong><%= submissionDate %></strong> remains pending. Despite prior follow-ups, the document has not been approved, which is now causing delays in <%= impactDetails %>.</p>
+
+  <h4>Key Details:</h4>
+  <ul>
+    <li><strong>Document Name/ID:</strong> <%= documentName %> / <%= documentId %></li>
+    <li><strong>Submission Date:</strong> <%= submissionDate %></li>
+    <li><strong>Current Status:</strong> Approval Pending</li>
+    <li><strong>Impact:</strong> <%= impactDetails %></li>
+  </ul>
+
+  <p>I kindly request <%= approverName %> to review and take the necessary action on this document at the earliest. If there are concerns or reasons for the delay, please let me know so that I can assist in addressing them.</p>
+
+  <p>For <%= adminName %>, I am escalating this matter to seek your intervention to ensure the approval process is expedited. Your support in resolving this promptly would be greatly appreciated.</p>
+
+  <p>Please let me know if you require any additional information or documentation to proceed. I look forward to your response by <strong><%= responseDeadline %></strong>.</p>
+
+  <p>Thank you for your attention to this matter.</p>
+
+
+</body>
+</html>

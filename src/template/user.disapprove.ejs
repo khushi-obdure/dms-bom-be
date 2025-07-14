@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hello <%= userName %>,</p>
+    <p>
+      Your document titled <strong>"<%= documentName %>"</strong> has been
+      reviewed by <%= approverName %> and was not approved.
+    </p>
+
+    <p><strong>Document Details:</strong></p>
+    <ul>
+      <li><strong>Title:</strong> <%= documentName %></li>
+      <li><strong>Submission Date:</strong> <%= submissionDate %></li>
+      <li>
+        <strong>Reason for Disapproval (if provided):</strong> <%=
+        disapprovalReason %>
+      </li>
+    </ul>
+
+    <p>
+      You can address the feedback and make the necessary changes, or contact
+      <%= approverName %> for further clarification.
+    </p>
+
+    <p>Click below to edit and resubmit the document:</p>
+    <p><a href="<%= documentLink %>" target="_blank">Edit Document</a></p>
+
+    <p>
+      We appreciate your efforts and encourage you to review the feedback to
+      improve the document.
+    </p>
+
+    <p>Best regards,</p>
+    <p><%= companyName %> Team</p>
+  </body>
+</html>

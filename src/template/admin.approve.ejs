@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hello <%= approverName %>,</p>
+    <p>
+      This is a confirmation that you have approved the document titled
+      <strong>"<%= documentName %>"</strong>.
+    </p>
+
+    <p><strong>Document Details:</strong></p>
+    <ul>
+      <li><strong>Title:</strong> <%= documentName %></li>
+      <li><strong>Submitted By:</strong> <%= userName %></li>
+      <li><strong>Submission Date:</strong> <%= submissionDate %></li>
+    </ul>
+
+    <p>
+      If you need to take any further action, please contact the document
+      creator directly at <%= userEmail %>.
+    </p>
+
+    <p>
+      Thank you for your prompt approval and attention to the review process.
+    </p>
+
+    <p>Best regards,</p>
+    <p><%= companyName %> Team</p>
+  </body>
+</html>
