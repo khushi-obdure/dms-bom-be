@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hello <%= approverName %>,</p>
+    <p>
+      A new BOM document titled "<strong><%= bomDocumentName %></strong>" has been created and is awaiting your review and approval.
+    </p>
+
+    <p><strong>Document Details:</strong></p>
+    <ul>
+      <li><strong>Title:</strong> <%= bomDocumentName %></li>
+      <li><strong>Document ID:</strong> <%= bomDocumentId %></li>
+      <li><strong>Create Date:</strong> <%=  bomDocumentCreateDate%></li>
+      <li><strong>Submitted By:</strong> <%=  submittedBy%></li>
+
+    </ul>
+
+
+    <p>Best regards,<br>Your Team</p>
+  </body>
+</html>

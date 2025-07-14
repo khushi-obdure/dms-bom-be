@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Approval Reminder</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        padding: 20px;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+      }
+      .header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .content {
+        margin-bottom: 20px;
+      }
+      .footer {
+        font-size: 12px;
+        text-align: center;
+        color: #777;
+      }
+      .button {
+        display: inline-block;
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Reminder: Document Approval Pending</h2>
+      </div>
+      <div class="content">
+        <p>Dear <strong><%= approverName %></strong>,</p>
+        <p>
+          This is a friendly reminder that the following document is pending
+          your approval:
+        </p>
+        <table
+          border="1"
+          cellpadding="10"
+          style="width: 100%; border-collapse: collapse; margin-top: 20px"
+        >
+          <tr>
+            <th>Document Name</th>
+            <td><%= documentName %></td>
+          </tr>
+          <tr>
+            <th>Document Date</th>
+            <td><%= documentDate %></td>
+          </tr>
+          <tr>
+            <th>Submitted By</th>
+            <td><%= submittedBy %></td>
+          </tr>
+        </table>
+        <p>
+          Kindly review and approve the document as soon as possible to avoid
+          delays. You can approve the document by clicking the button below:
+        </p>
+      </div>
+      <div class="footer">
+        <p>If you have any questions, please feel free to contact us.</p>
+        <p>Thank you!</p>
+      </div>
+    </div>
+  </body>
+</html>
